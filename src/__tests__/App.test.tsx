@@ -1,9 +1,16 @@
-function addingNumbers(a: number, b: number) {
-    return a + b;
-}
+import React from 'react';
+import { render } from '@testing-library/react-native';
+
+import App from '../App';
+import addingNumbers from '../utils/PureFunctions';
 
 describe('Testing App', () => {
     it('First test in course - should return the sum of numbers', () => {
         expect(addingNumbers(2,2)).toBe(4);
+    })
+
+    it('Should match with snapshot of the screen App', () => {
+        const result = render(<App />).toJSON();
+        expect(result).toMatchSnapshot();
     })
 })
