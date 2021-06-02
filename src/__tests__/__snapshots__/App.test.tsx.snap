@@ -10,6 +10,7 @@ exports[`Testing App Should match with snapshot of the screen App 1`] = `
       "justifyContent": "center",
     }
   }
+  testID="app"
 >
   <Text>
     Open up App.tsx to start working on your app!
