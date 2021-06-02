@@ -1,19 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import { HomeScreen } from './pages';
 
 export default function App() {
   return (
-    <View style={styles.container} testID='app'>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <View testID='app'>
+      <HomeScreen />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
