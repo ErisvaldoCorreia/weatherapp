@@ -2,11 +2,11 @@ import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export default function App() {
+const App = () => {
   return (
-    <LinearGradient colors={['red', 'blue']} style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </LinearGradient>
+      <LinearGradient colors={['white', 'grey']} style={styles.container}>
+        <Text>Weather App made with TDD</Text>
+      </LinearGradient>
   );
 }
 
@@ -18,3 +18,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
