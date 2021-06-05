@@ -6848,6 +6848,11 @@ react-native-gesture-handler@~1.10.2:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-get-location@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-get-location/-/react-native-get-location-2.1.1.tgz#13deb2818ab930577d07f5ef7f65fc4d7158d5e9"
+  integrity sha512-o4Ncarq407/KW2Z5kDDtCX6W+10vFkmKl7/Lv5rFov0clWP2ChSNj4kMKs+uY2pQydpeobCrJS6tdA/1oldpQQ==
+
 react-native-reanimated@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.1.0.tgz#b9ad04aee490e1e030d0a6cdaa43a14895d9a54d"
