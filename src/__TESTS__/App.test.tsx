@@ -4,7 +4,7 @@
 // import App from '../App';
 
 describe('Testing App Page', () => {
-    it('Should render correctly page', () => {
+    it('Should render HomePage by Default', () => {
         // TODO: implementar ao final com snapshot
     });
 });

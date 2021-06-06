@@ -1,5 +1,5 @@
 // Este é um mock reconhecido pelo Jest para simular
-// os resultados dentro de uma libray de forma que conseguimos
+// os resultados dentro de uma library de forma que conseguimos
 // realizar nossos testes.
 
 // As informações usadas para montar o mock foram 
