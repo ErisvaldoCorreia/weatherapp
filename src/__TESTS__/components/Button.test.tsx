@@ -24,12 +24,12 @@ describe('Testing Button Component', () => {
     })
 
     it('Should render label', () => {
-        const wrapper = render(<Button label='mock-label' onPress={jest.fn()} loading />);
+        const wrapper = render(<Button label='mock-label' onPress={jest.fn()} />);
         wrapper.getByText('mock-label');
     })
 
     it('Should accept custom view Props', () => {
-        const wrapper = render(<Button label='' onPress={jest.fn()} loading />);
+        const wrapper = render(<Button label='' onPress={jest.fn()} testID='mock-test-id' />);
         wrapper.getByTestId('mock-test-id');
     })
 
