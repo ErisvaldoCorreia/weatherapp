@@ -17,6 +17,11 @@ describe('Testing WeatherCurrent component', () => {
         wrapper.getByTestId('weather-current');
     });
 
+    it('Should render label on button', () => {
+        const wrapper = render(<WeatherCurrent />);
+        wrapper.getByText('Weather at my position!');
+    });
+
     it('Should navigate to weather screen with location', async () => {
         const mockNavigate = jest.fn();
         (useNavigation as jest.Mock).mockReturnValueOnce(

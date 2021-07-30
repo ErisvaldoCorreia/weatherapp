@@ -13,7 +13,7 @@ const WeatherCurrent = () => {
 
     return <Button 
             testID={'weather-current'}
-            label=''
+            label='Weather at my position!'
             onPress={handleFetchLocation}
         />;
 };
