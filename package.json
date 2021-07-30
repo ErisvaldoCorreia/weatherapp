@@ -7,8 +7,8 @@
     "web": "expo start --web",
     "start": "react-native start",
     "test": "jest",
-    "test:w": "jest --watchAll",
-    "test:coverage": "jest --collectCoverage=true"
+    "test:w": "jest --watchAll --silent",
+    "test:coverage": "jest --collectCoverage=true --silent"
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.10",

@@ -1,5 +1,4 @@
 import React, { useCallback } from 'react';
-import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import LocationService from '../services/LocationService';
 import Button from './Button';

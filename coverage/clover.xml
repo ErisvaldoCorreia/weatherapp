@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1627658041719" clover="3.2.0">
-  <project timestamp="1627658041719" name="All files">
+<coverage generated="1627658241909" clover="3.2.0">
+  <project timestamp="1627658241909" name="All files">
     <metrics statements="24" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="10" elements="36" coveredelements="36" complexity="0" loc="24" ncloc="24" packages="5" files="9" classes="9"/>
     <package name="src">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -25,12 +25,12 @@
       </file>
       <file name="WeatherCurrent.tsx" path="/home/junior/Documentos/React Native/weatherapp/src/components/WeatherCurrent.tsx">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.pages">
