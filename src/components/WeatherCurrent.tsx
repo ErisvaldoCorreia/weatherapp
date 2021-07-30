@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import LocationService from '../services/LocationService';
+import Button from './Button';
 
 const WeatherCurrent = () => {
-    return <View testID={'weather-current'} />;
+    const navigation = useNavigation();
+
+    const handleFetchLocation = useCallback(async () => {
+        const position = await LocationService.getCurrentPosition();
+        navigation.navigate('Weather', position);
+    },[navigation]);
+
+    return <Button 
+            testID={'weather-current'}
+            label=''
+            onPress={handleFetchLocation}
+        />;
 };
 
 export default WeatherCurrent;

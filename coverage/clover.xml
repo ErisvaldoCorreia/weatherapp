@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1627508415793" clover="3.2.0">
-  <project timestamp="1627508415793" name="All files">
-    <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="9" elements="28" coveredelements="28" complexity="0" loc="19" ncloc="19" packages="5" files="9" classes="9"/>
+<coverage generated="1627658041719" clover="3.2.0">
+  <project timestamp="1627658041719" name="All files">
+    <metrics statements="24" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="10" coveredmethods="10" elements="36" coveredelements="36" complexity="0" loc="24" ncloc="24" packages="5" files="9" classes="9"/>
     <package name="src">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.tsx" path="/home/junior/Documentos/React Native/weatherapp/src/App.tsx">
@@ -11,11 +11,12 @@
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
       <file name="Button.tsx" path="/home/junior/Documentos/React Native/weatherapp/src/components/Button.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
       </file>
       <file name="WeatherCoordinates.tsx" path="/home/junior/Documentos/React Native/weatherapp/src/components/WeatherCoordinates.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -23,9 +24,13 @@
         <line num="5" count="1" type="stmt"/>
       </file>
       <file name="WeatherCurrent.tsx" path="/home/junior/Documentos/React Native/weatherapp/src/components/WeatherCurrent.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.pages">
@@ -53,8 +58,8 @@
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="LocationService.ts" path="/home/junior/Documentos/React Native/weatherapp/src/services/LocationService.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.utils">
