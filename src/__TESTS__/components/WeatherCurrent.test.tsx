@@ -58,18 +58,20 @@ describe('Testing WeatherCurrent component', () => {
             const button = wrapper.getByTestId('weather-current');
             fireEvent.press(button);
 
-            await expect(wrapper.findByTestId('button-loading')).resolves.toBeDefined();
-            await act(async () => {
-                await mockResolve({latitude: 0, longitude: 0});
-            })
-        });
+            waitFor(() => {
+                expect(wrapper.findByTestId('button-loading')).resolves.toBeDefined();
+            });
+            await mockResolve({latitude: 0, longitude: 0});
+        })
 
         it('should not be rendered when position has been fetched', () => {
             const wrapper = render(<WeatherCurrent />);
             const button = wrapper.getByTestId('weather-current');
             fireEvent.press(button);
 
-            return expect(wrapper.findByTestId('button-loading')).rejects.toThrow();
+            waitFor(() => {
+                expect(wrapper.findByTestId('button-loading')).rejects.toThrow();
+            });
         });
 
         it('should not be rendered when position has been failed', () => {
@@ -79,7 +81,9 @@ describe('Testing WeatherCurrent component', () => {
             const button = wrapper.getByTestId('weather-current');
             fireEvent.press(button);
 
-            return expect(wrapper.findByTestId('button-loading')).rejects.toThrow();
+            waitFor(() => {
+                expect(wrapper.findByTestId('button-loading')).rejects.toThrow();
+            });
         });
 
     })
