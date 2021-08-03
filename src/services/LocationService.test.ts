@@ -1,4 +1,4 @@
-import LocationService from "../../services/LocationService";
+import LocationService from "./LocationService";
 
 describe('Testing service to get Location', () => {
 
