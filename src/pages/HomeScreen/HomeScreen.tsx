@@ -3,9 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import moment from 'moment';
 
-import { Colors } from '../utils/constants';
-import WeatherCurrent from '../components/WeatherCurrent';
-import WeatherCardinates from '../components/WeatherCoordinates';
+import { Colors } from '../../utils/constants';
+import { WeatherCurrent } from '../../components';
+import { WeatherCoordinates } from '../../components';
 
 const HomeScreen = () => {
     const now = moment(new Date());
@@ -27,7 +27,7 @@ const HomeScreen = () => {
         <Text testID={'home-screen-divider'} style={styles.divider}>
             OR
         </Text>
-        <WeatherCardinates />
+        <WeatherCoordinates />
       </LinearGradient>
   );
 }

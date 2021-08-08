@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
 
-import WeatherScreen from '../../pages/WeatherScreen';
+import WeatherScreen from './WeatherScreen';
 
 describe('Testing WeatherScreen', () => {
     it('Should render correctly', () => {

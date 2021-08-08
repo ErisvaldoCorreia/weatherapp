@@ -3,12 +3,12 @@ import { View } from 'react-native';
 import { render, waitFor } from '@testing-library/react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import AppRouter from '../../pages/AppRouter';
-import HomeScreen from '../../pages/HomeScreen';
-import WeatherScreen from '../../pages/WeatherScreen';
+import AppRouter from './AppRouter';
+import { HomeScreen } from '../';
+import { WeatherScreen } from '../';
 
-jest.mock('../../pages/HomeScreen', () => jest.fn());
-jest.mock('../../pages/WeatherScreen', () => jest.fn());
+jest.mock('../../pages/HomeScreen/HomeScreen', () => jest.fn());
+jest.mock('../../pages/WeatherScreen/WeatherScreen', () => jest.fn());
 
 describe('Testing AppRouter Screen', () => {
 

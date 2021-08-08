@@ -2,7 +2,7 @@ import React from 'react';
 import { act, fireEvent, render, waitFor } from '@testing-library/react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import WeatherCurrent from '../../components/WeatherCurrent';
+import WeatherCurrent from './WeatherCurrent';
 import LocationService from '../../services/LocationService';
 
 jest.mock('@react-navigation/native', () => {

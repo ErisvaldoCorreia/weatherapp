@@ -7,7 +7,7 @@ import {
     ActivityIndicator 
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Colors } from '../utils/constants';
+import { Colors } from '../../utils/constants';
 
 interface PropsButton extends ViewProps {
     label: string;

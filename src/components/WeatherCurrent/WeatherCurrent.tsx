@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import LocationService from '../services/LocationService';
-import Button from './Button';
+import LocationService from '../../services/LocationService';
+import { Button } from '../';
 
 const WeatherCurrent = () => {
     const [loading, setLoading] = useState(false);

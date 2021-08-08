@@ -3,20 +3,20 @@ import { View } from 'react-native';
 import { render } from '@testing-library/react-native';
 import MockDate from 'mockdate';
 
-import HomeScreen from '../../pages/HomeScreen';
-import WeatherCurrent from '../../components/WeatherCurrent';
-import WeatherCoordinates from '../../components/WeatherCoordinates';
+import HomeScreen from './HomeScreen';
+import { WeatherCurrent } from '../../components/';
+import { WeatherCoordinates } from '../../components/';
 
 
 // Para implementar o retorno visual dos componentes
 // na tela HomeScreen foi utilizado o processo de mock 
 // de forma que tenhamos o efeito de ShallowRenderer 
 jest.mock(
-    '../../components/WeatherCoordinates', 
+    '../../components/WeatherCoordinates/WeatherCoordinates', 
     () => jest.fn().mockReturnValue(null)
 );
 jest.mock(
-    '../../components/WeatherCurrent', 
+    '../../components/WeatherCurrent/WeatherCurrent', 
     () => jest.fn().mockReturnValue(null)
 );
 

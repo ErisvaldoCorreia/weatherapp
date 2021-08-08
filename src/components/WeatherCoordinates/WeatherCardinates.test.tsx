@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
 
-import WeatherCoordinates from '../../components/WeatherCoordinates';
+import WeatherCoordinates from './WeatherCoordinates';
 
 describe('Testing WeatherCurrent component', () => {
     it('Should render correclty', () => {
