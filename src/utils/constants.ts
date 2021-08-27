@@ -5,4 +5,5 @@ export enum Colors {
     BUTTON_DARK_GREY = '#595c66',
     DARK_GREY = '#2c2d35',
     WHITE = '#f1f1f1',
+    ERROR = '#D8000C',
 };

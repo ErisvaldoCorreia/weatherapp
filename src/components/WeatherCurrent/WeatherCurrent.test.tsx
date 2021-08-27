@@ -1,9 +1,11 @@
 import React from 'react';
-import { act, fireEvent, render, waitFor } from '@testing-library/react-native';
+import '@testing-library/jest-native';
+import { fireEvent, render, waitFor } from '@testing-library/react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import WeatherCurrent from './WeatherCurrent';
 import LocationService from '../../services/LocationService';
+import { Colors } from '../../utils/constants';
 
 jest.mock('@react-navigation/native', () => {
     return {
@@ -61,6 +63,7 @@ describe('Testing WeatherCurrent component', () => {
             waitFor(() => {
                 expect(wrapper.findByTestId('button-loading')).resolves.toBeDefined();
             });
+            
             await mockResolve({latitude: 0, longitude: 0});
         })
 
@@ -86,6 +89,34 @@ describe('Testing WeatherCurrent component', () => {
             });
         });
 
-    })
+    });
+
+    describe('Errors section', () => {
+
+        it('should be have a border color when service has been failed', () => {
+            jest.spyOn(LocationService, 'getCurrentPosition').mockRejectedValueOnce(new Error(''));
+            
+            const wrapper = render(<WeatherCurrent />);
+            const button = wrapper.getByTestId('weather-current');
+            fireEvent.press(button);
+
+            waitFor(() => {
+                expect(button).toHaveStyle({borderColor: Colors.ERROR});
+            });
+        });
+
+        it('should be reset border color on press button again', () => {
+            jest.spyOn(LocationService, 'getCurrentPosition').mockRejectedValueOnce(new Error(''));
+            
+            const wrapper = render(<WeatherCurrent />);
+            const button = wrapper.getByTestId('weather-current');
+            fireEvent.press(button);
+
+            waitFor(() => {
+                fireEvent.press(button);
+                expect(button).not.toHaveStyle({borderColor: Colors.ERROR});
+            });
+        });
+    });
 
 });
